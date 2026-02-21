@@ -1565,11 +1565,11 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Source IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa2 — ora è la sorgente!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.66  (IP di PC-Alfa2 — ora è la sorgente!)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Destination IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa1 — ora è la destinazione!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.65  (IP di PC-Alfa1 — ora è la destinazione!)</span>
             </div>
         </div>
         <div class="packet-layer">
@@ -1588,10 +1588,19 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
         </div>
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">🔬</div>
-        <div class="label">[IMG_18] — PDU Information dell'Echo Reply: nota gli IP invertiti e Type = 0</div>
-        <div class="hint">Cattura i dettagli del pacchetto di risposta, evidenziando il campo Type e gli IP invertiti</div>
+    <img src="img/2pdu_information.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — pdu information 2
     </div>
 </section>
 
@@ -1623,7 +1632,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                 <div class="code-body">
 <span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.______</span>  <span class="comment">&lt;-- IP di PC-Beta1</span>
 
-<span class="output">Pinging 192.168.0.______ with 32 bytes of data:</span>
+<span class="output">Pinging 192.168.0.1 with 32 bytes of data:</span>
 
 <span class="highlight">Request timed out.</span>
 <span class="highlight">Request timed out.</span>
@@ -1648,10 +1657,19 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
         </p>
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">❌</div>
-        <div class="label">[IMG_19] — Output del comando ping da PC-Alfa1 verso PC-Beta1 (fallimento - Request timed out)</div>
-        <div class="hint">Cattura il Command Prompt di PC-Alfa1 con il ping fallito verso un IP della Rete Beta</div>
+     <img src="img/ping_fallito.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — ping fallito
     </div>
 
     <h3>Analisi nella Simulation Mode del ping fallito</h3>
@@ -1673,10 +1691,19 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
         </div>
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">🚫</div>
-        <div class="label">[IMG_20] — Simulation Mode: il pacchetto da PC-Alfa1 verso PC-Beta1 viene scartato (X rossa)</div>
-        <div class="hint">Cattura la topologia in Simulation Mode mostrando la X rossa sul pacchetto scartato</div>
+    <img src="img/ping_fallito.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — ping fallito
     </div>
 
     <div class="step">
