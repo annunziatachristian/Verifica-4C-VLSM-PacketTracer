@@ -702,11 +702,14 @@
         alcun router</strong>, quindi i pacchetti destinati a subnet diverse verranno semplicemente scartati.
     </p>
 
-    <div class="img-placeholder">
-        <div class="icon">📐</div>
-        <div class="label">[IMG_01] — Schema concettuale VLSM: suddivisione del blocco 192.168.0.0/24 in subnet di dimensioni diverse</div>
-        <div class="hint">Catturare uno schema o disegno che mostri la suddivisione dello spazio di indirizzamento</div>
+    <div style="text-align: center; margin: 24px 0;">
+    <img src="img/schema_vlsm.png"
+         alt="Schema concettuale VLSM - Suddivisione del blocco 192.168.0.0/24" 
+         style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #94a3b8; margin-top: 12px;">
+        [IMG_01] — Schema concettuale VLSM: suddivisione del blocco 192.168.0.0/24 in subnet di dimensioni diverse
     </div>
+</div>
 </section>
 
 <!-- ═══════════════════════════ SEZIONE 3 ═══════════════════════════ -->
@@ -768,27 +771,27 @@
             <tbody>
                                 <tr>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.64</span></td>
+                    <td><span class="placeholder-cell">255.255.255.248</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
+                    <td><span class="placeholder-cell">192.168.0.70</span></td>
+                    <td><span class="placeholder-cell">192.168.0.71</span></td>
                 </tr>
                                 <tr>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.0</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
+                    <td><span class="placeholder-cell">192.168.0.30</span></td>
+                    <td><span class="placeholder-cell">192.168.0.31</span></td>
                 </tr>
                                 <tr>
                     <td><span class="net-tag d">Rete Gamma</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.32</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
+                    <td><span class="placeholder-cell">192.168.0.62</span></td>
+                    <td><span class="placeholder-cell">192.168.0.63</span></td>
                 </tr>
             </tbody>
         </table>
@@ -815,36 +818,36 @@
                 <tr>
                     <td><code>PC-Alfa1</code></td>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
+                    <td><span class="placeholder-cell">255.255.255.248</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Alfa2</code></td>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.66</span></td>
+                    <td><span class="placeholder-cell">255.255.255.248</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Beta1</code></td>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Beta2</code></td>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Gamma1</code></td>
                     <td><span class="net-tag d">Rete Gamma</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.34</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
