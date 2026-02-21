@@ -1258,23 +1258,23 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
         <p>Tutti e tre devono restituire <strong>4 Reply con 0% loss</strong>.</p>
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">📟</div>
-        <div class="label">[IMG_09] — Output del ping tra PC-Beta1 e PC-Beta2 (successo)</div>
-        <div class="hint">Cattura il risultato del ping nella Rete Beta</div>
+     <div style="text-align: center; margin: 24px 0;">
+    <img src="img/2ping.png"
+         alt="Schema concettuale VLSM - Suddivisione del blocco 192.168.0.0/24"
+         style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #94a3b8; margin-top: 12px;">
+        [IMG_07] — ping beta 1 su beta 2
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">📟</div>
-        <div class="label">[IMG_10] — Output del ping tra PC-Gamma1 e PC-Gamma2 (successo)</div>
-        <div class="hint">Cattura il risultato del ping nella Rete Beta</div>
+    <div style="text-align: center; margin: 24px 0;">
+    <img src="img/3ping.png"
+         alt="Schema concettuale VLSM - Suddivisione del blocco 192.168.0.0/24"
+         style="width: 100%; max-width: 900px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #94a3b8; margin-top: 12px;">
+        [IMG_07] — ping gamma 1 su gamma 2
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">📟</div>
-        <div class="label">[IMG_11] — Output del ping tra PC-Gamma1 e PC-Gamma2 (successo)</div>
-        <div class="hint">Cattura il risultato del ping nella Rete Gamma</div>
-    </div>
+    
 </section>
 
 <!-- ═══════════════════════════ SEZIONE 7 ═══════════════════════════ -->
@@ -1300,11 +1300,24 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                 con due schede: <strong>Realtime</strong> e <strong>Simulation</strong>. 
                 Clicca su <strong>Simulation</strong> per passare alla modalità di simulazione.
             </p>
-            <div class="img-placeholder">
-                <div class="icon">⏱️</div>
-                <div class="label">[IMG_12] — Il pannello Simulation Mode con il pulsante evidenziato</div>
-                <div class="hint">Mostra la barra inferiore di Packet Tracer con la scheda Simulation selezionata</div>
-            </div>
+           <div style="grid-column: 1 / -1; text-align: center; margin: 24px 0;">
+
+    <img src="img/pulsante_simulation.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — pulsante simulation
+    </div>
+
+</div>
         </div>
     </div>
 
@@ -1318,11 +1331,20 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                 Questo ci permette di visualizzare solo i pacchetti ping, filtrando il traffico ARP 
                 e altro che potrebbe confondere l'analisi.
             </p>
-            <div class="img-placeholder">
-                <div class="icon">🔍</div>
-                <div class="label">[IMG_13] — Filtro protocolli impostato su ICMP nella Simulation Mode</div>
-                <div class="hint">Mostra la finestra Edit Filters con solo ICMP selezionato</div>
-            </div>
+            <img src="img/filtri_simulation.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — filtri simulation
+    </div>
         </div>
     </div>
 
@@ -1339,11 +1361,20 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                 Una busta animata apparirà su <code>PC-Alfa1</code>. Non premere ancora 
                 <strong>Capture/Forward</strong>.
             </p>
-            <div class="img-placeholder">
-                <div class="icon">✉️</div>
-                <div class="label">[IMG_14] — PDU (busta) creata su PC-Alfa1, pronta per essere inviata</div>
-                <div class="hint">Mostra la busta apparsa sopra PC-Alfa1 nella topologia</div>
-            </div>
+            <img src="img/busta_pdu.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — busta pdu
+    </div>
         </div>
     </div>
 
@@ -1360,11 +1391,20 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                 Quando la busta compare nel pannello <strong>Event List</strong>, 
                 fai clic sulla riga corrispondente per aprire i <strong>dettagli del pacchetto</strong>.
             </p>
-            <div class="img-placeholder">
-                <div class="icon">📋</div>
-                <div class="label">[IMG_15] — Event List con il pacchetto ICMP catturato</div>
-                <div class="hint">Mostra l'Event List con le righe dei pacchetti ICMP; evidenzia la riga su cui cliccare</div>
-            </div>
+            <img src="img/busta_consegnata.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — busta pdu consegnata
+    </div>
         </div>
     </div>
 
@@ -1405,11 +1445,11 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Src MAC Address</span>
-                <span class="field-value" style="color: var(--accent-pink);">____:____:____  (MAC di PC-Alfa1)</span>
+                <span class="field-value" style="color: var(--accent-pink);">0005:5EA3:6654  (MAC di PC-Alfa1)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Dest MAC Address</span>
-                <span class="field-value" style="color: var(--accent-pink);">____:____:____  (MAC di PC-Alfa2)</span>
+                <span class="field-value" style="color: var(--accent-pink);">0010:11CA:683D  (MAC di PC-Alfa2)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">EtherType</span>
@@ -1440,11 +1480,11 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Source IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa1)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.65  (IP di PC-Alfa1)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Destination IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa2)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.66  (IP di PC-Alfa2)</span>
             </div>
         </div>
 
@@ -1468,16 +1508,34 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
         </div>
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">🔬</div>
-        <div class="label">[IMG_16] — Finestra PDU Information: scheda OSI Model con i dettagli di ogni livello</div>
-        <div class="hint">Cattura la schermata PDU Information espansa con tutti i livelli visibili</div>
+   <img src="img/pdu_information.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — pdu information
     </div>
 
-    <div class="img-placeholder">
-        <div class="icon">🔬</div>
-        <div class="label">[IMG_17] — Finestra PDU Information: scheda Inbound/Outbound PDU Details</div>
-        <div class="hint">Cattura la scheda che mostra i dettagli in formato tabellare (Inbound PDU / Outbound PDU)</div>
+    <img src="img/scheda_inbound.png"
+         alt="pulsante simulation"
+         style="width: min(900px, 100%);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border: 1px solid #e2e8f0;">
+
+    <div style="font-family: 'JetBrains Mono', monospace;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 12px;">
+        [IMG_07] — scheda inbound
     </div>
 
     <div class="info-box">
